@@ -1,0 +1,7 @@
+FROM php:7.0.8-apache
+
+RUN docker-php-ext-install pdo_mysqlR
+RUN apt-get install vim
+RUN apt-get update \
+
+COPY . /var/www/html

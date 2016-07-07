@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  application:
+    build:
+      context: .
+      dockerfile: ./docker/application/Dockerfile_v1
+    working_dir: /var/www/html
+    ports:
+      - 80
